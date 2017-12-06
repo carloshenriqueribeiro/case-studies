@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="INOVECRModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ClienteId" />
+    </Key>
+    <Property Name="ClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CPF" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Endereco" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pedidos" Relationship="Self.fk_Pedido_Cliente_idx" FromRole="Clientes" ToRole="Pedidos" />
+  </EntityType>
+  <EntityType Name="PedidoItem">
+    <Key>
+      <PropertyRef Name="PedidoItemId" />
+    </Key>
+    <Property Name="PedidoItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="Valor" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Pedido_PedidoId" Type="Int32" />
+    <Property Name="Pedido_ClienteId" Type="Int32" />
+    <NavigationProperty Name="Pedidos" Relationship="Self.fk_PedidoItem_Pedido1_idx" FromRole="PedidoItem" ToRole="Pedidos" />
+  </EntityType>
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="PedidoId" />
+    </Key>
+    <Property Name="PedidoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="TipoPedido" Type="Int32" Nullable="false" />
+    <Property Name="Cliente_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clientes" Relationship="Self.fk_Pedido_Cliente_idx" FromRole="Pedidos" ToRole="Clientes" />
+    <NavigationProperty Name="PedidoItem" Relationship="Self.fk_PedidoItem_Pedido1_idx" FromRole="Pedidos" ToRole="PedidoItem" />
+  </EntityType>
+  <Association Name="fk_Pedido_Cliente_idx">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+    <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="ClienteId" />
+      </Principal>
+      <Dependent Role="Pedidos">
+        <PropertyRef Name="Cliente_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_PedidoItem_Pedido1_idx">
+    <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="0..1" />
+    <End Role="PedidoItem" Type="Self.PedidoItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedidos">
+        <PropertyRef Name="PedidoId" />
+      </Principal>
+      <Dependent Role="PedidoItem">
+        <PropertyRef Name="Pedido_PedidoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="INOVECREntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="PedidoItem" EntityType="Self.PedidoItem" />
+    <EntitySet Name="Pedidos" EntityType="Self.Pedidos" />
+    <AssociationSet Name="fk_Pedido_Cliente_idx" Association="Self.fk_Pedido_Cliente_idx">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Pedidos" EntitySet="Pedidos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_PedidoItem_Pedido1_idx" Association="Self.fk_PedidoItem_Pedido1_idx">
+      <End Role="Pedidos" EntitySet="Pedidos" />
+      <End Role="PedidoItem" EntitySet="PedidoItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

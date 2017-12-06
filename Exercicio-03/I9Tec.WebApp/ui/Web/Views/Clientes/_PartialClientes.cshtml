@@ -1,0 +1,37 @@
+﻿@using Web.Helpers
+@using Model
+@model ClienteModel
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm((string) ViewBag.Rota, "Clientes", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+
+    @Html.HiddenFor(x => x.ClienteId)
+
+    @Html.LabelFor(x => x.Nome, new { @class = "control-label" })
+    @Html.TextBoxFor(x => x.Nome, new { @class = "form-control", placeholder = "Informe seu nome" })
+    @Html.ValidationMessageFor(x => x.Nome, null, new { @class = " help-block text-danger" })
+
+
+    @Html.LabelFor(x => x.Endereco, new { @class = "control-label" })
+    @Html.TextBoxFor(x => x.Endereco, new { @class = "form-control endereco", placeholder = "informe seu endereço" })
+    @Html.ValidationMessageFor(x => x.Endereco, null, new { @class = " help-block text-danger" })
+
+
+    @Html.LabelFor(x => x.Email, new { @class = "control-label" })
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control email", placeholder = "Informe seu email" })
+    @Html.ValidationMessageFor(x => x.Email, null, new { @class = " help-block text-danger" })
+
+
+    @Html.LabelFor(x => x.CPF, new { @class = "control-label" })
+    @Html.TextBoxFor(x => x.CPF, new { @class = "form-control xcpf", placeholder = "Informe seu CPF" })
+    @Html.ValidationMessageFor(x => x.CPF, null, new { @class = " help-block text-danger" })
+
+
+
+
+    @Html.Button("submit", "enviar", "enviar", "Enviar")
+}
+
+

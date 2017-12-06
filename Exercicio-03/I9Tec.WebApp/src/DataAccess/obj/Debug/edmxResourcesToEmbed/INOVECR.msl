@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="INOVECRModelStoreContainer" CdmEntityContainer="INOVECREntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="INOVECRModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PedidoItem">
+      <EntityTypeMapping TypeName="INOVECRModel.PedidoItem">
+        <MappingFragment StoreEntitySet="PedidoItem">
+          <ScalarProperty Name="PedidoItemId" ColumnName="PedidoItemId" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Pedido_PedidoId" ColumnName="Pedido_PedidoId" />
+          <ScalarProperty Name="Pedido_ClienteId" ColumnName="Pedido_ClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedidos">
+      <EntityTypeMapping TypeName="INOVECRModel.Pedidos">
+        <MappingFragment StoreEntitySet="Pedidos">
+          <ScalarProperty Name="PedidoId" ColumnName="PedidoId" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="TipoPedido" ColumnName="TipoPedido" />
+          <ScalarProperty Name="Cliente_Id" ColumnName="Cliente_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,58 @@
+﻿@using Model
+@model List<ClienteModel>
+
+
+<h2>Clientes</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Endereço</th>
+            <th>E-mail</th>
+            <th>#</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var clientes in Model)
+        {
+            <tr>
+                <td>@clientes.ClienteId</td>
+                <td>@clientes.Nome</td>
+                <td>@clientes.CPF</td>
+                <td>@clientes.Endereco</td>
+                <td>@clientes.Email</td>
+                @*<td>@clientes.Sexo.Sexo</td>*@
+                <td>
+                    <a href="Clientes/Edit/@clientes.ClienteId" class="btn btn-info btn-xs">Editar</a>
+                    <button class="btn btn-danger btn-xs" onclick="msg({ nome: '@clientes.Nome', id: @clientes.ClienteId })">Excluir</button>
+
+                </td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>
+
+
+@section SCRIPTS{
+    <script>
+
+        function msg(obj) {
+            var text = "Deseja excluir o contato " + obj.nome + " ? ";
+
+            if (confirm(text)) {
+                window.location = "Clientes/Delete/" + obj.id;
+            }
+        }
+
+    </script>
+}
+
+
+

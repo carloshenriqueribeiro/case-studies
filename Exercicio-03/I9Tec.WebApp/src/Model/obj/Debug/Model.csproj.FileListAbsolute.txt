@@ -1,0 +1,32 @@
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula5\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula5\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula5\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula5\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7\Netcoders.WebApp\src\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7 - Copia\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7 - Copia\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7 - Copia\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula7 - Copia\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula9\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula9\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula9\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula9\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula10\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula10\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula10\Netcoders.WebApp\src\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula10\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\filip\OneDrive\Públicos\IncubadoraSegQua\aula10\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
+C:\Users\carlos\Google Drive\WeBlank\Cursos\LGROUP\INCUBADORA\aula10\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\carlos\Google Drive\WeBlank\Cursos\LGROUP\INCUBADORA\aula10\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\carlos\Google Drive\WeBlank\Cursos\LGROUP\INCUBADORA\aula10\Netcoders.WebApp\src\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Google Drive\WeBlank\Cursos\LGROUP\INCUBADORA\aula10\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\carlos\Google Drive\WeBlank\Cursos\LGROUP\INCUBADORA\aula10\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
+C:\Users\chori\Source\Repos\Teste Carlos Ribeiro\Exercicio-03\NETCODERS-master\Netcoders.WebApp\src\Model\bin\Debug\Model.dll
+C:\Users\chori\Source\Repos\Teste Carlos Ribeiro\Exercicio-03\NETCODERS-master\Netcoders.WebApp\src\Model\bin\Debug\Model.pdb
+C:\Users\chori\Source\Repos\Teste Carlos Ribeiro\Exercicio-03\NETCODERS-master\Netcoders.WebApp\src\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\chori\Source\Repos\Teste Carlos Ribeiro\Exercicio-03\NETCODERS-master\Netcoders.WebApp\src\Model\obj\Debug\Model.dll
+C:\Users\chori\Source\Repos\Teste Carlos Ribeiro\Exercicio-03\NETCODERS-master\Netcoders.WebApp\src\Model\obj\Debug\Model.pdb
